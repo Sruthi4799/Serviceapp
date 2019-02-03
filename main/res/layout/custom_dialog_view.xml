@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Caution"
+    android:textSize="25sp"
+    android:padding="5dp"
+    android:textColor="#000"
+    android:id="@+id/title"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you really want to exit "
+        android:textSize="25sp"
+        android:padding="5dp"
+        android:textColor="#000"
+        android:id="@+id/message"
+        android:layout_below="@id/title"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/no"
+        android:text="No"
+        android:background="#ba2f1c"
+        android:layout_below="@id/message"
+        android:layout_toLeftOf="@id/yes"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/yes"
+        android:text="Yes"
+        android:background="#04d215"
+        android:layout_below="@id/message"
+        android:layout_alignParentRight="true"
+        />
+</RelativeLayout>

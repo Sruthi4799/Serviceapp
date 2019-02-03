@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start service"
+        android:id="@+id/start_service"
+        android:onClick="startService"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Intent Service"
+        android:id="@+id/intent_service"
+        android:onClick="intentService"
+        android:layout_toRightOf="@id/start_service"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alert Dailog"
+        android:onClick="alertDialog"
+        android:layout_below="@id/start_service"
+        android:id="@+id/alert_dialog"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custom Dialog"
+        android:id="@+id/custom_dialog"
+        android:layout_below="@id/intent_service"
+        android:layout_toRightOf="@id/alert_dialog"
+        android:onClick="customDialog"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Image"
+        android:id="@+id/get_image"
+        android:layout_below="@id/alert_dialog"
+        android:onClick="getImage"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/get_image"
+        android:id="@+id/image"
+        />
+</RelativeLayout>
